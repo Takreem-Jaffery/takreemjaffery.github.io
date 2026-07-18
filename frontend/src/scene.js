@@ -46,8 +46,8 @@ export function createHeroScene(canvas) {
   camera.position.set(0, 0.4, 8.5);
 
   const renderer = new THREE.WebGLRenderer({ canvas, antialias: true, alpha: true });
-  renderer.setPixelRatio(Math.min(window.devicePixelRatio, 2));
-  renderer.setSize(container.clientWidth, container.clientHeight, false);
+  renderer.setPixelRatio(Math.min(window.devicePixelRatio || 1, 2));
+  renderer.setSize(container.clientWidth, container.clientHeight);
 
   const group = new THREE.Group();
   scene.add(group);
@@ -158,7 +158,7 @@ export function createHeroScene(canvas) {
     const h = container.clientHeight;
     camera.aspect = w / h;
     camera.updateProjectionMatrix();
-    renderer.setSize(w, h, false);
+    renderer.setSize(w, h);
   }
   window.addEventListener('resize', onResize);
 
