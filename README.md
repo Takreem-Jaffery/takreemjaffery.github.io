@@ -1,68 +1,52 @@
 # Takreem Jaffery — Portfolio
 
-A two-part project:
+Welcome to my personal portfolio website! This site showcases my background, technical skills, projects, and professional experience as a Software Engineer with a focus on AI-powered applications, full-stack development, and mobile technologies.
 
-```
-frontend/   Vite + vanilla JS + Three.js — the actual site
-backend/    Express API for the contact form (optional, separate deploy)
-```
+## About
 
-## Quick start
+I'm a Software Engineering graduate passionate about building intelligent, user-centric software. My experience spans AI application development, web and mobile engineering, cloud technologies, and machine learning, with projects ranging from conversational AI systems to real-time collaboration platforms.
 
-```bash
-cd frontend
-npm install
-npm run dev
-```
+The portfolio highlights my journey, technical expertise, and the projects I've built throughout my academic and professional career.
 
-Open the printed `localhost` URL. Light/dark mode, scroll animations, and the
-hero graphic all work immediately. The contact form will show a friendly
-error until the backend is running too (see `backend/README.md`) — everything
-else on the page works without it.
+## Featured Projects
 
-## Why two folders
+### RAAI — Rural AI Avatar Interface
 
-GitHub Pages only hosts static files, so `frontend/` is what actually gets
-published there. `backend/` exists only to handle the contact form and needs
-a separate small host (Render, Railway, etc. — see `backend/README.md`) if
-you want that form to send real email. If you don't care about the form,
-you can ignore `backend/` entirely and just delete the form markup in
-`frontend/index.html`.
+An AI-powered conversational assistant developed in collaboration with Kashf Foundation to improve digital accessibility for rural communities in Pakistan. The system supports multilingual speech interaction, AI-generated responses, and an animated avatar experience.
 
-## Deploying the frontend to GitHub Pages
+### Nexus
 
-**Option A — GitHub Actions (recommended, already set up):**
+A real-time video conferencing platform featuring secure WebRTC communication, live multilingual transcription, speech translation, and AI-powered meeting summaries.
 
-1. Push this repo to GitHub.
-2. In the repo, go to **Settings → Pages → Build and deployment → Source**,
-   and select **GitHub Actions**.
-3. Push to `main` — `.github/workflows/deploy.yml` builds `frontend/` and
-   publishes `frontend/dist` automatically. Check the **Actions** tab for
-   progress and the live URL.
+### WhatsApp Spam & Misinformation Detection
 
-**Option B — manual:**
+A hybrid machine learning and transformer-based system that detects spam and misinformation using TF-IDF, Random Forest, DistilBERT, and explainable AI techniques.
 
-```bash
-cd frontend
-npm install
-npm run build      # outputs frontend/dist
-npx gh-pages -d dist
-```
+## Technologies
 
-(`gh-pages` pushes the `dist` folder to a `gh-pages` branch; enable Pages for
-that branch in repo settings if you go this route.)
+* JavaScript (ES6+)
+* HTML5 & CSS3
+* Vite
+* Three.js
+* React
+* Node.js
+* Express.js
+* WebRTC
+* Socket.IO
+* Python
+* Google Cloud
+* Git & GitHub
 
-## Stack
+## Website
 
-- **Vite** for dev server + bundling
-- **Three.js** for the hero graphic (a small rotating graph representing how
-  the stack fits together — web, mobile, cloud, AI/ML, data — with an
-  animated "shipping" pulse and a drifting particle field)
-- Plain CSS with custom properties for the light/dark theme, no framework
-- **Express** (backend/) for the contact form endpoint only
+Visit the live portfolio:
 
-## Editing content
+**https://takreem-jaffery.github.io/**
 
-All the resume content lives directly in `frontend/index.html` — experience,
-projects, skills, education. Colors and type scale are CSS custom properties
-at the top of `frontend/src/style.css` if you want to adjust the palette.
+## Contact
+
+If you'd like to discuss opportunities, collaborations, or connect professionally, feel free to reach out through the contact section of the portfolio or connect with me on LinkedIn.
+
+---
+
+Designed and developed by **Takreem Jaffery**.
