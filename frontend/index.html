@@ -1,0 +1,377 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dark">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Takreem Jaffery — Software Engineer</title>
+<meta name="description" content="Takreem Jaffery — Software Engineer building AI-powered products across web, mobile, and cloud.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=IBM+Plex+Sans:wght@400;500;600;700&family=IBM+Plex+Mono:wght@400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="/src/style.css">
+</head>
+<body>
+
+<div class="grid-bg"></div>
+
+<header>
+  <nav>
+    <div class="logo"><span class="dot"></span>TJ<span class="logo-sub">&nbsp;/ engineer</span></div>
+    <div class="navlinks">
+      <a href="#experience">Experience</a>
+      <a href="#projects">Projects</a>
+      <a href="#skills">Skills</a>
+      <a href="#education">Education</a>
+      <a href="#contact">Contact</a>
+    </div>
+    <button class="theme-toggle" id="themeToggle" aria-label="Toggle theme">
+      <svg id="themeIcon" viewBox="0 0 24 24" fill="none" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"></svg>
+    </button>
+  </nav>
+</header>
+
+<main>
+  <!-- HERO -->
+  <section class="hero">
+    <div class="wrap">
+      <div class="eyebrow">Web · Mobile · Cloud · AI</div>
+      <h1 class="display">Takreem Jaffery</h1>
+      <p class="hero-sub">I build AI-powered software across <strong>web, mobile, and cloud</strong>—turning complex ideas into practical, user-focused products.</p>
+
+      <div class="quickfacts reveal">
+        <div class="qf"><span class="qf-k">Based in</span><span class="qf-v">San Ramon, CA</span></div>
+        <div class="qf"><span class="qf-k">Focus</span><span class="qf-v">AI Applications · Full-Stack &amp; Mobile Engineering</span></div>
+        <div class="qf"><span class="qf-k">Graduated</span><span class="qf-v">B.S. Software Engineering, FAST-NUCES</span></div>
+      </div>
+
+      <div class="hero-cta">
+        <a href="#experience" class="btn btn-primary">See the work</a>
+        <a href="#contact" class="btn btn-ghost">Get in touch</a>
+      </div>
+
+      <div class="hero-visual reveal">
+        <canvas id="heroCanvas"></canvas>
+        <div class="hv-caption">how it fits together — web · mobile · cloud · AI · data</div>
+      </div>
+    </div>
+  </section>
+
+  <!-- EXPERIENCE -->
+  <section id="experience" class="section-pad">
+    <div class="wrap">
+      <div class="section-head reveal"><span class="tag">01</span><h2>Experience</h2></div>
+      <div class="timeline">
+        <div class="tl-item reveal">
+          <div class="tl-dot"></div>
+          <div class="tl-head">
+            <h3>Contour Software</h3>
+            <span class="tl-role">Software Development Intern</span>
+            <span class="tl-time">June 2025 – Aug 2025</span>
+          </div>
+          <ul class="tl-list">
+            <li>Led a team of six interns to develop an AI-powered multilingual meeting assistant that automated transcription, translation, and meeting minutes generation to streamline meeting documentation.</li>
+            <li>Engineered Nexus, an accessibility-first video conferencing platform featuring real-time transcription, translation, and AI-powered speech synthesis for seamless multilingual communication.</li>
+            <li>Architected a scalable MERN, WebRTC, and Socket.IO platform integrated with Whisper AI and Coqui TTS, then optimized cloud deployment on Render for reliable, low-latency performance.</li>
+            <li>Won "Most Technically Sound Project" and "Best Presentation" among interns.</li>
+          </ul>
+          <div class="tl-tags">
+            <span class="stat-badge">6 interns led</span>
+            <span class="tag-pill">MERN</span><span class="tag-pill">WebRTC</span>
+            <span class="tag-pill">Socket.IO</span><span class="tag-pill">Render</span>
+          </div>
+          
+          <!-- ▼ carousel — optional, delete this whole div for entries with no images -->
+          <div class="mini-carousel" data-carousel>
+            <div class="carousel-track">
+              <div class="carousel-strip">
+                <div class="carousel-slide">
+                <video src="./src/assets/Nexus App Demo.mp4" muted playsinline preload="metadata" aria-label="Nexus product demo (silent)"></video>
+                </div>
+                <div class="carousel-slide"><img src="./src/assets/Contour1.jpeg" alt="Contour Internship" loading="lazy"></div>
+                <div class="carousel-slide"><img src="./src/assets/Contour2.jpeg" alt="Contour Internship Presentation" loading="lazy"></div>
+                <div class="carousel-slide"><img src="./src/assets/Contour3.jpeg" alt="Award distribution and technical recognition" loading="lazy"></div>
+                </div>
+              </div>
+            <div class="car-dots"></div>
+          </div>
+          <!-- ▲ end carousel -->
+
+        </div>
+
+        <div class="tl-item reveal">
+          <div class="tl-dot"></div>
+          <div class="tl-head">
+            <h3>Polymath-Kids</h3>
+            <span class="tl-role">Instructor — Android Studio App Development &amp; C++</span>
+            <span class="tl-time">June 2024 – Jan 2025</span>
+          </div>
+          <ul class="tl-list">
+            <li>Taught foundational C++ programming through hands-on projects, building students' problem-solving skills.</li>
+            <li>Mentored students in building and debugging native Android applications in Android Studio.</li>
+            <li>Wrote 16 structured lesson plans (8 per course) to standardize instruction and progressive skill-building.</li>
+          </ul>
+          <div class="tl-tags">
+            <span class="tag-pill">C++</span><span class="tag-pill">Android Studio</span><span class="tag-pill">Curriculum design</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- PROJECTS -->
+  <section id="projects" class="section-pad tight">
+    <div class="wrap">
+      <div class="section-head reveal"><span class="tag">02</span><h2>Projects</h2></div>
+      <div class="proj-grid">
+
+        <div class="proj-card reveal">
+          <div class="proj-index">01 / Final Year Project</div>
+          <h3>RAAI</h3>
+          <div class="proj-sub">Intermediary chatbot for rural outreach</div>
+          <div class="proj-badges"><span class="stat-badge">770K+ clients reached</span></div>
+          <p>Developed an AI-powered conversational assistant in collaboration 
+            with Kashf Foundation to enhance financial outreach for more than 770,000 
+            clients across Pakistan through multilingual, voice-based interactions.
+             Built a real-time AI pipeline using Whisper, LLaMA 3, Gemma, Qwen 2.5,
+              and RAG, developed the MERN web platform and cross-platform mobile application 
+              with React Native and Java, and deployed the backend infrastructure 
+              while producing comprehensive technical documentation.</p>
+          <div class="proj-tags">
+            <span class="tag-pill">LLaMA 3</span><span class="tag-pill">RAG</span>
+            <span class="tag-pill">React Native</span><span class="tag-pill">MERN</span>
+          </div>
+          <!-- ▼ carousel — optional -->
+          <div class="mini-carousel" data-carousel>
+            <div class="carousel-track">
+              <div class="carousel-strip">
+                <div class="carousel-slide"><img src="./src/assets/RAAI1.jpeg" alt="RAAI Final Presentation" loading="lazy"></div>
+                <div class="carousel-slide"><img src="./src/assets/RAAI2.jpeg" alt="RAAI team" loading="lazy"></div>
+                <div class="carousel-slide"><img src="./src/assets/RAAI3.jpeg" alt="RAAI poster" loading="lazy"></div>
+                <div class="carousel-slide"><img src="./src/assets/RAAI4.jpeg" alt="RAAI mobile interface in Urdu" loading="lazy"></div>
+              </div>
+            </div>
+          </div>
+          <!-- ▲ end carousel -->
+        </div>
+
+        <div class="proj-card reveal">
+          <div class="proj-index">02 / Data Science &amp; InfoSec</div>
+          <h3>Hybrid AI Spam &amp; Misinformation Detection</h3>
+          <div class="proj-sub">WhatsApp spam / misinformation classifier</div>
+          <div class="proj-badges">
+            <span class="stat-badge">97.9% accuracy</span>
+            <span class="stat-badge">100% precision</span>
+          </div>
+          <p>Reviewed 25+ research papers on misinformation detection, 
+            NLP, transformers, and cybersecurity to design a hybrid spam 
+            detection framework. Developed a hybrid machine learning pipeline
+             combining TF-IDF, Random Forest, DistilBERT, and rule-based reasoning with explainable risk 
+             assessment and contextual ensemble scoring, 
+            achieving 97.9% accuracy and 100% precision.</p>
+          <div class="proj-tags">
+            <span class="tag-pill">Random Forest</span><span class="tag-pill">DistilBERT</span><span class="tag-pill">TF-IDF</span>
+          </div>
+          <!-- ▼ carousel — optional -->
+          <div class="mini-carousel" data-carousel>
+            <div class="carousel-track">
+              <div class="carousel-strip">
+                <div class="carousel-slide"><img src="./src/assets/WhatsApp1.PNG" alt="Research Paper" loading="lazy"></div>
+                <div class="carousel-slide"><img src="./src/assets/WhatsApp2.png" alt="Methodology" loading="lazy"></div>
+                <div class="carousel-slide"><img src="./src/assets/WhatsApp3.png" alt="Hybrid Model" loading="lazy"></div>
+                <div class="carousel-slide"><img src="./src/assets/WhatsApp4.png" alt="Evaluation Metrics" loading="lazy"></div>
+                <div class="carousel-slide">
+                <video src="./src/assets/WhatsApp Demo Video.mp4" muted playsinline preload="metadata" aria-label="WhatsApp product demo (silent)"></video>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- ▲ end carousel -->
+        </div>
+
+        <div class="proj-card reveal">
+          <div class="proj-index">03 / Applied AI Course</div>
+          <h3>Mallama</h3>
+          <div class="proj-sub">Malware Detection using LLaMA</div>
+          <p>Fine-tuned Meta's LLaMA model on a malicious code dataset using 
+            Hugging Face Transformers and Google Colab, building an end-to-end 
+            workflow for preprocessing, evaluation, and malware classification.</p>
+          <div class="proj-tags">
+            <span class="tag-pill">LLaMA</span><span class="tag-pill">Hugging Face</span><span class="tag-pill">Google Colab</span>
+          </div>
+        </div>
+
+        <div class="proj-card reveal">
+          <div class="proj-index">04 / Software Design &amp; Architecture</div>
+          <h3>Affix</h3>
+          <div class="proj-sub">Social chatting application</div>
+          <p>A social networking and messaging application built with 
+            Android Studio, Java, and Firestore featuring real-time messaging, 
+            media sharing, profile customization, 
+            AI-powered recommendations, and an administrative analytics dashboard.</p>
+          <div class="proj-tags">
+            <span class="tag-pill">Java</span><span class="tag-pill">Android Studio</span><span class="tag-pill">Firestore</span>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- SKILLS -->
+  <section id="skills" class="section-pad tight">
+    <div class="wrap">
+      <div class="section-head reveal"><span class="tag">03</span><h2>Skills</h2></div>
+      <div class="skills-grid">
+
+        <div class="skill-col reveal">
+          <h4>Languages</h4>
+          <div class="eq">
+            <span style="--h1:.5;--h2:.9; animation-delay:0s"></span>
+            <span style="--h1:.8;--h2:.4; animation-delay:.2s"></span>
+            <span style="--h1:.4;--h2:1; animation-delay:.4s"></span>
+            <span style="--h1:.9;--h2:.5; animation-delay:.1s"></span>
+          </div>
+          <ul><li>C / C++</li><li>Java</li><li>JavaScript</li><li>Python</li></ul>
+        </div>
+
+        <div class="skill-col reveal">
+          <h4>Web &amp; Mobile</h4>
+          <div class="eq">
+            <span style="--h1:.7;--h2:.3; animation-delay:.1s"></span>
+            <span style="--h1:.9;--h2:.6; animation-delay:.3s"></span>
+            <span style="--h1:.4;--h2:.9; animation-delay:0s"></span>
+          </div>
+          <ul><li>React</li><li>React Native</li><li>MERN stack</li></ul>
+        </div>
+
+        <div class="skill-col reveal">
+          <h4>Databases</h4>
+          <div class="eq">
+            <span style="--h1:.6;--h2:1; animation-delay:.2s"></span>
+            <span style="--h1:.9;--h2:.4; animation-delay:0s"></span>
+            <span style="--h1:.5;--h2:.8; animation-delay:.35s"></span>
+            <span style="--h1:.8;--h2:.5; animation-delay:.15s"></span>
+          </div>
+          <ul><li>MSSQL</li><li>MongoDB</li><li>Firestore</li><li>SQLite</li></ul>
+        </div>
+
+        <div class="skill-col reveal">
+          <h4>Cloud &amp; Tools</h4>
+          <div class="eq">
+            <span style="--h1:.4;--h2:.9; animation-delay:0s"></span>
+            <span style="--h1:.9;--h2:.5; animation-delay:.2s"></span>
+            <span style="--h1:.5;--h2:1; animation-delay:.4s"></span>
+            <span style="--h1:.7;--h2:.3; animation-delay:.1s"></span>
+            <span style="--h1:.8;--h2:.6; animation-delay:.3s"></span>
+          </div>
+          <ul><li>Google Cloud</li><li>AWS</li><li>Render</li><li>Git</li><li>WSL / StarUML</li></ul>
+        </div>
+
+        <div class="skill-col reveal">
+          <h4>AI / ML</h4>
+          <div class="eq">
+            <span style="--h1:.9;--h2:.5; animation-delay:.05s"></span>
+            <span style="--h1:.5;--h2:1; animation-delay:.25s"></span>
+            <span style="--h1:.8;--h2:.4; animation-delay:.15s"></span>
+            <span style="--h1:.4;--h2:.9; animation-delay:.35s"></span>
+          </div>
+          <ul><li>LLaMA</li><li>RAG</li><li>Hugging Face</li><li>Whisper / Coqui</li></ul>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- EDUCATION -->
+  <section id="education" class="section-pad tight">
+    <div class="wrap">
+      <div class="section-head reveal"><span class="tag">04</span><h2>Education</h2></div>
+      <div class="edu-card reveal">
+        <div>
+          <h3>Bachelor of Software Engineering</h3>
+          <div class="school">FAST-NUCES</div>
+          <div class="period">Aug 2022 — 2026</div>
+          <div class="edu-honor">summa cum laude — highest honor</div>
+        </div>
+        <div class="gpa-badge">
+          <div class="num">3.9</div>
+          <div class="lbl">/ 4.0 GPA</div>
+        </div>
+      </div>
+
+      <div class="awards-grid reveal">
+        <div class="award">
+          <svg viewBox="0 0 24 24" fill="none" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="8" r="6"/><path d="M8 14 L6 22 L12 19 L18 22 L16 14"/></svg>
+          Co-Lead, Women in Tech at GDGoC
+        </div>
+        <div class="award">
+          <svg viewBox="0 0 24 24" fill="none" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M3 21h18M6 21V9h4v12M14 21V4h4v17"/></svg>
+          Deputy Head, Office &amp; Marketing — Women in Engineering IEEE
+        </div>
+        <div class="award">
+          <svg viewBox="0 0 24 24" fill="none" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M4 4h16v4a8 8 0 0 1-16 0V4z"/><path d="M4 8H2v2a4 4 0 0 0 4 4M20 8h2v2a4 4 0 0 1-4 4M12 16v4M8 22h8"/></svg>
+          Rector's List — 2 semesters
+        </div>
+        <div class="award">
+          <svg viewBox="0 0 24 24" fill="none" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M4 4h16v4a8 8 0 0 1-16 0V4z"/><path d="M4 8H2v2a4 4 0 0 0 4 4M20 8h2v2a4 4 0 0 1-4 4M12 16v4M8 22h8"/></svg>
+          Dean's List — 6 semesters
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CONTACT -->
+  <section id="contact" class="section-pad tight">
+    <div class="wrap">
+      <div class="contact-panel reveal">
+        <div class="eyebrow" style="justify-content:center;">let's build something</div>
+        <h2>Have a product worth building?</h2>
+        <p>I'm always happy to discuss AI applications, 
+          full-stack engineering, accessibility-focused software, 
+          or building products that solve real-world problems.</p>
+
+        <!-- <form class="contact-form" id="contactForm">
+          <div>
+            <label for="cf-name">Name</label>
+            <input id="cf-name" name="name" type="text" required>
+          </div>
+          <div>
+            <label for="cf-email">Email</label>
+            <input id="cf-email" name="email" type="email" required>
+          </div>
+          <div>
+            <label for="cf-message">Message</label>
+            <textarea id="cf-message" name="message" required></textarea>
+          </div>
+          <button type="submit" id="cf-submit">Send message</button>
+          <div class="form-status" id="cf-status" role="status" aria-live="polite"></div>
+        </form>
+
+        <div class="or-divider">or reach me directly</div> -->
+
+        <div class="contact-links">
+          <a class="clink" href="mailto:takreem.jaffery@gmail.com">
+            <svg viewBox="0 0 24 24"><path d="M4 4h16v16H4z" stroke-width="1.5"/><path d="M4 6l8 7 8-7" stroke-width="1.5"/></svg>
+            takreem.jaffery@gmail.com
+          </a>
+          <a class="clink" href="tel:+923039496424">
+            <svg viewBox="0 0 24 24"><path d="M22 16.9v3a2 2 0 0 1-2.2 2 19.8 19.8 0 0 1-8.6-3 19.5 19.5 0 0 1-6-6 19.8 19.8 0 0 1-3-8.7A2 2 0 0 1 4.1 2h3a2 2 0 0 1 2 1.7c.1.9.3 1.8.6 2.7a2 2 0 0 1-.5 2.1L8 9.7a16 16 0 0 0 6 6l1.2-1.2a2 2 0 0 1 2.1-.5c.9.3 1.8.5 2.7.6a2 2 0 0 1 1.7 2z" stroke-width="1.5"/></svg>
+            +974 33483511
+          </a>
+          <a class="clink" href="https://www.linkedin.com/in/takreem-jaffery-5b0130252" target="_blank" rel="noopener">
+            <svg viewBox="0 0 24 24"><rect x="3" y="3" width="18" height="18" rx="2" stroke-width="1.5"/><path d="M7 10v7M7 7v.01M12 17v-4a2 2 0 0 1 4 0v4M12 13v4" stroke-width="1.5"/></svg>
+            LinkedIn
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <footer>
+    <div class="wrap">© 2026 Takreem Jaffery</div>
+  </footer>
+</main>
+
+<script type="module" src="/src/main.js"></script>
+</body>
+</html>
