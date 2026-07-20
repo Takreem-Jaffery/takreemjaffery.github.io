@@ -10,9 +10,13 @@
 <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=IBM+Plex+Sans:wght@400;500;600;700&family=IBM+Plex+Mono:wght@400;500;600&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="/src/style.css">
 </head>
+<script type="module" src="/src/ascii-bg.js"></script>
+<script type="module" src="/src/main.js"></script>
+<script type="module" src="/src/lightbox.js"></script>
 <body>
 
-<div class="grid-bg"></div>
+<canvas id="asciiAmbient" class="ascii-layer" aria-hidden="true"></canvas>
+<canvas id="asciiTrail" class="ascii-layer" aria-hidden="true"></canvas>
 
 <header>
   <nav>
