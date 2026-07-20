@@ -21,14 +21,14 @@ function cssColor(varName, fallback) {
 
 function makeLabelSprite(text, color) {
   const cvs = document.createElement('canvas');
-  cvs.width = 256;
-  cvs.height = 64;
+  cvs.width = 1024;
+  cvs.height = 256;
   const ctx = cvs.getContext('2d');
-  ctx.font = '600 34px "IBM Plex Mono", monospace';
+  ctx.font = '600 136px "IBM Plex Mono", monospace';
   ctx.fillStyle = color;
   ctx.textAlign = 'center';
   ctx.textBaseline = 'middle';
-  ctx.fillText(text, 128, 32);
+  ctx.fillText(text, 512, 128);
   const tex = new THREE.CanvasTexture(cvs);
   tex.minFilter = THREE.LinearFilter;
   const mat = new THREE.SpriteMaterial({ map: tex, transparent: true, depthWrite: false });
@@ -46,8 +46,8 @@ export function createHeroScene(canvas) {
   camera.position.set(0, 0.4, 8.5);
 
   const renderer = new THREE.WebGLRenderer({ canvas, antialias: true, alpha: true });
-  renderer.setPixelRatio(Math.min(window.devicePixelRatio, 2));
-  renderer.setSize(container.clientWidth, container.clientHeight, false);
+  renderer.setPixelRatio(Math.min(window.devicePixelRatio || 1, 2));
+  renderer.setSize(container.clientWidth, container.clientHeight);
 
   const group = new THREE.Group();
   scene.add(group);
@@ -158,7 +158,7 @@ export function createHeroScene(canvas) {
     const h = container.clientHeight;
     camera.aspect = w / h;
     camera.updateProjectionMatrix();
-    renderer.setSize(w, h, false);
+    renderer.setSize(w, h);
   }
   window.addEventListener('resize', onResize);
 
